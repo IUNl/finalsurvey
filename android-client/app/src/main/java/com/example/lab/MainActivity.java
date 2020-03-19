@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
         return null;
     }
 
-    public static void uploadLogFile(Context context, String uploadUrl, String oldFilePath) {
+    public void uploadLogFile(Context context, String uploadUrl, String oldFilePath) {
         try {
             URL url = new URL(uploadUrl);
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
@@ -352,6 +352,10 @@ public void uploadFile(){
                 }
             }
         }).start();
+
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this,UnlockActivity.class);
+        startActivity(intent);
     }
 
 }
