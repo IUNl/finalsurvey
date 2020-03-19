@@ -1,0 +1,3 @@
+1. Open index.html to enter the questionnaire creation interface
+2. Compile and run myserver.java before creating the client upload file.
+To successfully save the file, modify the myserver.java file storage address.
